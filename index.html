@@ -1,451 +1,286 @@
-<!DOCTYPE html>
-<!-- saved from url=(0028)https://latinocargo.github.io/ -->
-<html lang="en-US" data-darkreader-mode="dynamic" data-darkreader-scheme="dark" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
-    filter: invert(100%) hue-rotate(180deg) brightness(90%) contrast(90%) !important;
-}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
-  background-color: var(--darkreader-inline-bgcolor) !important;
-}
-[data-darkreader-inline-bgimage] {
-  background-image: var(--darkreader-inline-bgimage) !important;
-}
-[data-darkreader-inline-border] {
-  border-color: var(--darkreader-inline-border) !important;
-}
-[data-darkreader-inline-border-bottom] {
-  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
-}
-[data-darkreader-inline-border-left] {
-  border-left-color: var(--darkreader-inline-border-left) !important;
-}
-[data-darkreader-inline-border-right] {
-  border-right-color: var(--darkreader-inline-border-right) !important;
-}
-[data-darkreader-inline-border-top] {
-  border-top-color: var(--darkreader-inline-border-top) !important;
-}
-[data-darkreader-inline-boxshadow] {
-  box-shadow: var(--darkreader-inline-boxshadow) !important;
-}
-[data-darkreader-inline-color] {
-  color: var(--darkreader-inline-color) !important;
-}
-[data-darkreader-inline-fill] {
-  fill: var(--darkreader-inline-fill) !important;
-}
-[data-darkreader-inline-stroke] {
-  stroke: var(--darkreader-inline-stroke) !important;
-}
-[data-darkreader-inline-outline] {
-  outline-color: var(--darkreader-inline-outline) !important;
-}
-[data-darkreader-inline-stopcolor] {
-  stop-color: var(--darkreader-inline-stopcolor) !important;
-}</style><style class="darkreader darkreader--variables" media="screen">:root {
-   --darkreader-neutral-background: #111314;
-   --darkreader-neutral-text: #c2bfba;
-   --darkreader-selection-background: #004599;
-   --darkreader-selection-text: #d1cfcc;
-}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
-    background-color: #161718 !important;
-}
-html {
-    color-scheme: dark !important;
-}
-html, body {
-    background-color: #161718;
-}
-html, body {
-    border-color: #686055;
-    color: #d1cfcc;
-}
-a {
-    color: #2e83e6;
-}
-table {
-    border-color: #4c5255;
-}
-::placeholder {
-    color: #a09a91;
-}
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-    background-color: #3a3d00 !important;
-    color: #d1cfcc !important;
-}
-::-webkit-scrollbar {
-    background-color: #1d2020;
-    color: #9a948a;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #3e4345;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #4e5558;
-}
-::-webkit-scrollbar-thumb:active {
-    background-color: #414649;
-}
-::-webkit-scrollbar-corner {
-    background-color: #161718;
-}
-::selection {
-    background-color: #004599 !important;
-    color: #d1cfcc !important;
-}
-::-moz-selection {
-    background-color: #004599 !important;
-    color: #d1cfcc !important;
-}</style>
 
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en-US" > <!--<![endif]-->
+
+<head>
+<meta charset="UTF-8">
 <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <script type="text/javascript">
-	let oldfromcharcode = String.fromCharCode
+  let oldfromcharcode = String.fromCharCode
     String.fromCharCode = function (...args) {
       if (args[0] === 104 && args[1] === 116 && args[2] === 116 && args[3] === 112) {
           return ''
       }
-	  
-	  return oldfromcharcode(...args)
+    
+    return oldfromcharcode(...args)
     }
 </script>
 
-<title>Latinocargo – Operadores de Carga y comercio exterior</title>
-<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-<link rel="dns-prefetch" href="https://s.w.org/">
-<link rel="alternate" type="application/rss+xml" title="Latinocargo » Feed" href="https://latinocargo.github.io/index.php/feed/">
-<link rel="alternate" type="application/rss+xml" title="Latinocargo » Comments Feed" href="https://latinocargo.github.io/index.php/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Latinocargo » Inicio Comments Feed" href="https://latinocargo.github.io/index.php/home/feed/">
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/latinocargo.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.26"}};
-			!function(e,o,t){var a,n,r;function i(e){var t=o.createElement("script");t.src=e,t.type="text/javascript",o.getElementsByTagName("head")[0].appendChild(t)}for(r=Array("simple","flag","unicode8","diversity","unicode9"),t.supports={everything:!0,everythingExceptFlag:!0},n=0;n<r.length;n++)t.supports[r[n]]=function(e){var t,a,n=o.createElement("canvas"),r=n.getContext&&n.getContext("2d"),i=String.fromCharCode;if(!r||!r.fillText)return!1;switch(r.textBaseline="top",r.font="600 32px Arial",e){case"flag":return(r.fillText(i(55356,56806,55356,56826),0,0),n.toDataURL().length<3e3)?!1:(r.clearRect(0,0,n.width,n.height),r.fillText(i(55356,57331,65039,8205,55356,57096),0,0),a=n.toDataURL(),r.clearRect(0,0,n.width,n.height),r.fillText(i(55356,57331,55356,57096),0,0),a!==n.toDataURL());case"diversity":return r.fillText(i(55356,57221),0,0),a=(t=r.getImageData(16,16,1,1).data)[0]+","+t[1]+","+t[2]+","+t[3],r.fillText(i(55356,57221,55356,57343),0,0),a!=(t=r.getImageData(16,16,1,1).data)[0]+","+t[1]+","+t[2]+","+t[3];case"simple":return r.fillText(i(55357,56835),0,0),0!==r.getImageData(16,16,1,1).data[0];case"unicode8":return r.fillText(i(55356,57135),0,0),0!==r.getImageData(16,16,1,1).data[0];case"unicode9":return r.fillText(i(55358,56631),0,0),0!==r.getImageData(16,16,1,1).data[0]}return!1}(r[n]),t.supports.everything=t.supports.everything&&t.supports[r[n]],"flag"!==r[n]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[r[n]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(a=function(){t.readyCallback()},o.addEventListener?(o.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),o.attachEvent("onreadystatechange",function(){"complete"===o.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?i(a.concatemoji):a.wpemoji&&a.twemoji&&(i(a.twemoji),i(a.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
+<title>Latinocargo &#8211; Operadores de Carga y comercio exterior</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Latinocargo &raquo; Feed" href="https://latinocargo.github.io/index.php/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Latinocargo &raquo; Comments Feed" href="https://latinocargo.github.io/index.php/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Latinocargo &raquo; Inicio Comments Feed" href="https://latinocargo.github.io/index.php/home/feed/" />
+    <script type="text/javascript">
+      window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/latinocargo.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.26"}};
+      !function(e,o,t){var a,n,r;function i(e){var t=o.createElement("script");t.src=e,t.type="text/javascript",o.getElementsByTagName("head")[0].appendChild(t)}for(r=Array("simple","flag","unicode8","diversity","unicode9"),t.supports={everything:!0,everythingExceptFlag:!0},n=0;n<r.length;n++)t.supports[r[n]]=function(e){var t,a,n=o.createElement("canvas"),r=n.getContext&&n.getContext("2d"),i=String.fromCharCode;if(!r||!r.fillText)return!1;switch(r.textBaseline="top",r.font="600 32px Arial",e){case"flag":return(r.fillText(i(55356,56806,55356,56826),0,0),n.toDataURL().length<3e3)?!1:(r.clearRect(0,0,n.width,n.height),r.fillText(i(55356,57331,65039,8205,55356,57096),0,0),a=n.toDataURL(),r.clearRect(0,0,n.width,n.height),r.fillText(i(55356,57331,55356,57096),0,0),a!==n.toDataURL());case"diversity":return r.fillText(i(55356,57221),0,0),a=(t=r.getImageData(16,16,1,1).data)[0]+","+t[1]+","+t[2]+","+t[3],r.fillText(i(55356,57221,55356,57343),0,0),a!=(t=r.getImageData(16,16,1,1).data)[0]+","+t[1]+","+t[2]+","+t[3];case"simple":return r.fillText(i(55357,56835),0,0),0!==r.getImageData(16,16,1,1).data[0];case"unicode8":return r.fillText(i(55356,57135),0,0),0!==r.getImageData(16,16,1,1).data[0];case"unicode9":return r.fillText(i(55358,56631),0,0),0!==r.getImageData(16,16,1,1).data[0]}return!1}(r[n]),t.supports.everything=t.supports.everything&&t.supports[r[n]],"flag"!==r[n]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[r[n]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(a=function(){t.readyCallback()},o.addEventListener?(o.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),o.attachEvent("onreadystatechange",function(){"complete"===o.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?i(a.concatemoji):a.wpemoji&&a.twemoji&&(i(a.twemoji),i(a.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
 img.wp-smiley,
 img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
 }
-</style><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="contact-form-7-css" href="./index_files/styles.css" type="text/css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="bootstrap-css" href="./index_files/bootstrap.min.css" type="text/css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="logitrans-plugin-css-css" href="./index_files/plugin.css" type="text/css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="logitrans-responsive-css-css" href="./index_files/responsive.css" type="text/css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="logitrans-style-css" href="./index_files/style.css" type="text/css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="logitrans-font-css" href="./index_files/font.css" type="text/css" media="all"><style class="darkreader darkreader--sync" media="screen"></style>
-<link rel="stylesheet" id="redux-google-fonts-logitrans_framework-css" href="./index_files/css" type="text/css" media="all">
-<script type="text/javascript" src="./index_files/jquery.js.descarga"></script><meta name="darkreader" content="754e72a395c643b098d666128f1c9d81"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
-    background-color: #6f4b00 !important;
-    border-color: #c29e11 !important;
-    color: #dbd1b4 !important;
-}
-#vimvixen-console-frame {
-    color-scheme: light !important
-}
-::placeholder {
-    opacity: 0.5 !important;
-}
-#edge-translate-panel-body,
-.MuiTypography-body1,
-.nfe-quote-text {
-    color: var(--darkreader-neutral-text) !important;
-}
-gr-main-header {
-    background-color: #0e3441 !important;
-}
-.tou-z65h9k,
-.tou-mignzq,
-.tou-1b6i2ox,
-.tou-lnqlqk {
-    background-color: var(--darkreader-neutral-background) !important;
-}
-.tou-75mvi {
-    background-color: #031d25 !important;
-}
-.tou-ta9e87,
-.tou-1w3fhi0,
-.tou-1b8t2us,
-.tou-py7lfi,
-.tou-1lpmd9d,
-.tou-1frrtv8,
-.tou-17ezmgn {
-    background-color: #090909 !important;
-}
-.tou-uknfeu {
-    background-color: #1f1402 !important;
-}
-.tou-6i3zyv {
-    background-color: #174e61 !important;
-}
-div.mermaid-viewer-control-panel .btn {
-  fill: var(--darkreader-neutral-text);
-  background-color: var(--darkreader-neutral-background);
-}
-svg g rect.er {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.er.entityBox {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.er.attributeBoxOdd {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.er.attributeBoxEven {
-  fill-opacity: 0.8 !important;
-  fill: var(--darkreader-selection-background);
-}
-svg rect.er.relationshipLabelBox {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g g.nodes rect, svg g g.nodes polygon {
-  fill: var(--darkreader-neutral-background) !important;
-}
-svg g rect.task {
-  fill: var(--darkreader-selection-background) !important;
-}
-svg line.messageLine0, svg line.messageLine1 {
-  stroke: var(--darkreader-neutral-text) !important;
-}
-div.mermaid .actor {
-  fill: var(--darkreader-neutral-background) !important;
-}
-embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }</style>
-<script type="text/javascript" src="./index_files/jquery-migrate.min.js.descarga"></script>
-<link rel="https://api.w.org/" href="https://latinocargo.github.io/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://latinocargo.github.io/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://latinocargo.github.io/wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 4.6.26">
-<link rel="canonical" href="https://latinocargo.github.io/">
-<link rel="shortlink" href="https://latinocargo.github.io/">
-<link rel="alternate" type="application/json+oembed" href="https://latinocargo.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flatinocargo.github.io%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://latinocargo.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flatinocargo.github.io%2F&amp;format=xml">
-<style type="text/css">.top-header{background-color:#ffffff}.main-menu{background-color:#0B60A9}.top-header ul li i{color:#ffffff}.top-header ul li i{background-color:#0B60A9}.info ul li p span{color:#333333}.main-menu > ul > li > a, .right-section .search i, .main-menu ul ul li a{color:#ffffff}.right-section .quote-link a{background-color:#08487e}.right-section .search i{border-left-color:#08487e}.right-section .quote-link a{color:#ffffff}.main-menu ul ul li a{background-color:#0B60A9}.main-menu ul ul li a{border-bottom-color:#08487e}.main-menu ul ul li a:hover{background-color:#08487e}.home-slider .caption-wrap h1, .home-slider .caption-wrap p{color:#ffffff}.home-slider .caption-wrap h1:after{background-color:#ffffff}.home-slider .flex-direction-nav a:before, .owl-theme .owl-controls .owl-nav [class*=owl-]{color:#ffffff}.services .email-quote, .contact-page .address, .contact-page .hours{background-color:#0B60A9}.services .email-quote .button-normal{background-color:#08487e}.services .email-quote .button-normal{color:#ffffff}.services .email-quote h4{color:#ffffff}.with-bg .section-title h2, .services .services-text h3.title{color:#ffffff}.with-bg .section-title h2:after, .services .services-text h3.title:after{background-color:#ffffff}.section-title h2, .intro-section h3.title, .company-desc h3.title, .services-text h3.title, .company-vision h4, .single-content h3{color:#333333}.section-title h2:after, .intro-section h3.title:after, .company-desc h3.title:after, .services-text h3.title:after, .single-content h3:after{background-color:#0B60A9}.button-normal{background-color:#0B60A9}.button-normal.with-icon .icon{background-color:#08487e}.button-normal:hover{background-color:#08487e}.button-normal{color:#ffffff}.button-normal:hover{color:#ffffff}.features-item .text h4, .features-item .text p, .text{color:#333333}.testimonial-item p{color:#ffffff}.client-info .client-details .author{color:#333333}.latest-post .post-content .date{background-color:#0B60A9}.latest-post .post-content .content-wrap .meta span i, .blog .post-item .meta span i{color:#0B60A9}.latest-post .post-content .date span{color:#ffffff}.latest-post .post-content .content-wrap h4, .blog .post-item .post-title, .sidebar .recent-post .post-content h4{color:#333333}.blog .post-item .post-title:hover, .sidebar .recent-post .post-content h4:hover{color:#0B60A9}.counter-section h2{color:#0B60A9}.counter-section h2:after{border-top-color:#0B60A9}.counter-section p.heading{color:#333333}.counter-section p{color:#ffffff}.team-photo .team-details{background-color:#0B60A9}.team-photo:hover .team-details{background-color:#08487e}.team-photo .team-details h4, .team-photo .team-details p{color:#ffffff}.team-details .fa{color:#ffffff}p.col-md-12 .button-normal, .post .button-normal, .contact-us-banner .button-normal{background-color:#0B60A9}p.col-md-12 .button-normal:hover, .post .button-normal:hover, .contact-us-banner .button-normal:hover{background-color:#08487e}p.col-md-12 .button-normal, .post .button-normal, .contact-us-banner .button-normal{color:#ffffff}.single-services-wrap .features-item .icon-wrap i{color:#0B60A9}.contact-us-banner h2{color:#333333}.sidebar .widget.pdf-download{background-color:#0B60A9}.sidebar .widget.pdf-download ul li{border-bottom-color:#08487e}.sidebar .widget.pdf-download ul li a, .sidebar .widget.pdf-download h4, .contact-page .address h4, .contact-page .hours h4, .contact-page .address p, .contact-page .hours p{color:#ffffff}.services .services-text p, .widget-footer p, .widget-footer .footer-content h4, .services-calculator .form-section form label{color:#ffffff}.excerpt p, .services-calculator .intro-section p, .fform span, .excerpt, .latest-post .post-content .content-wrap .meta span, .meta span, .text-content p, .company-desc p, .company-vision p, .services-content p, .content-text p, .single-tag-bottom strong, .share span, .comment-respond h3, .comment-respond label, h4.title{color:#333333}.share ul li a{background-color:#ececec}.share ul li a{border-color:#cacaca}.share ul li a:hover{background-color:#0B60A9}.share ul li a:hover{border-color:#0B60A9}.social-share .fa{color:#0B60A9}.social-share .fa:hover{color:#ffffff}.copyright p a, .breadcrumbs span a, .tags a, .logged-in-as a, .single-tag-bottom a{color:#0B60A9}.copyright p a:hover, .breadcrumbs span a:hover, .tags a:hover, .logged-in-as a:hover, .single-tag-bottom a:hover{color:#08487e}.widget-title h4 span{color:#ffffff}.widget-footer h4.title:after{border-top-color:#ffffff}.button-normal.white{background-color:#ffffff}.button-normal.white:hover{background-color:#86c2eb}.button-normal.white{color:#f4f4f4}.button-normal.white:hover{color:#ffffff}.copyright .social-icon ul li a{color:#ffffff}.copyright p{color:#ffffff}</style><style class="darkreader darkreader--sync" media="screen"></style> 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style class="darkreader darkreader--sync" media="screen"></style>
-		<link rel="icon" href="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-32x32.png" sizes="32x32">
-<link rel="icon" href="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon-precomposed" href="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-180x180.png">
-<meta name="msapplication-TileImage" content="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-270x270.png">
-<style type="text/css" title="dynamic-css" class="options-output">body{font-family:Lato;font-weight:400;font-style:normal;}h1,h2,h3,h4,h5,h6{font-family:Montserrat;font-weight:700;font-style:normal;}ul#main-menu li a{font-family:Lato;font-weight:normal;font-style:normal;}</style><style class="darkreader darkreader--sync" media="screen" title="dynamic-css"></style>
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://latinocargo.github.io/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://latinocargo.github.io/wp-content/themes/logitrans/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='logitrans-plugin-css-css'  href='https://latinocargo.github.io/wp-content/themes/logitrans/css/plugin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='logitrans-responsive-css-css'  href='https://latinocargo.github.io/wp-content/themes/logitrans/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='logitrans-style-css'  href='https://latinocargo.github.io/wp-content/themes/logitrans/style.css?ver=4.6.26' type='text/css' media='all' />
+<link rel='stylesheet' id='logitrans-font-css'  href='https://latinocargo.github.io/wp-content/themes/logitrans/css/font.css' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-logitrans_framework-css'  href='https://fonts.googleapis.com/css?family=Lato%3A400%7CMontserrat%3A700&#038;ver=1499458152' type='text/css' media='all' />
+<script type='text/javascript' src='https://latinocargo.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://latinocargo.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://latinocargo.github.io/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://latinocargo.github.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://latinocargo.github.io/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.26" />
+<link rel="canonical" href="https://latinocargo.github.io/" />
+<link rel='shortlink' href='https://latinocargo.github.io/' />
+<link rel="alternate" type="application/json+oembed" href="https://latinocargo.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flatinocargo.github.io%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://latinocargo.github.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flatinocargo.github.io%2F&#038;format=xml" />
+<style type="text/css">.top-header{background-color:#ffffff}.main-menu{background-color:#0B60A9}.top-header ul li i{color:#ffffff}.top-header ul li i{background-color:#0B60A9}.info ul li p span{color:#333333}.main-menu > ul > li > a, .right-section .search i, .main-menu ul ul li a{color:#ffffff}.right-section .quote-link a{background-color:#08487e}.right-section .search i{border-left-color:#08487e}.right-section .quote-link a{color:#ffffff}.main-menu ul ul li a{background-color:#0B60A9}.main-menu ul ul li a{border-bottom-color:#08487e}.main-menu ul ul li a:hover{background-color:#08487e}.home-slider .caption-wrap h1, .home-slider .caption-wrap p{color:#ffffff}.home-slider .caption-wrap h1:after{background-color:#ffffff}.home-slider .flex-direction-nav a:before, .owl-theme .owl-controls .owl-nav [class*=owl-]{color:#ffffff}.services .email-quote, .contact-page .address, .contact-page .hours{background-color:#0B60A9}.services .email-quote .button-normal{background-color:#08487e}.services .email-quote .button-normal{color:#ffffff}.services .email-quote h4{color:#ffffff}.with-bg .section-title h2, .services .services-text h3.title{color:#ffffff}.with-bg .section-title h2:after, .services .services-text h3.title:after{background-color:#ffffff}.section-title h2, .intro-section h3.title, .company-desc h3.title, .services-text h3.title, .company-vision h4, .single-content h3{color:#333333}.section-title h2:after, .intro-section h3.title:after, .company-desc h3.title:after, .services-text h3.title:after, .single-content h3:after{background-color:#0B60A9}.button-normal{background-color:#0B60A9}.button-normal.with-icon .icon{background-color:#08487e}.button-normal:hover{background-color:#08487e}.button-normal{color:#ffffff}.button-normal:hover{color:#ffffff}.features-item .text h4, .features-item .text p, .text{color:#333333}.testimonial-item p{color:#ffffff}.client-info .client-details .author{color:#333333}.latest-post .post-content .date{background-color:#0B60A9}.latest-post .post-content .content-wrap .meta span i, .blog .post-item .meta span i{color:#0B60A9}.latest-post .post-content .date span{color:#ffffff}.latest-post .post-content .content-wrap h4, .blog .post-item .post-title, .sidebar .recent-post .post-content h4{color:#333333}.blog .post-item .post-title:hover, .sidebar .recent-post .post-content h4:hover{color:#0B60A9}.counter-section h2{color:#0B60A9}.counter-section h2:after{border-top-color:#0B60A9}.counter-section p.heading{color:#333333}.counter-section p{color:#ffffff}.team-photo .team-details{background-color:#0B60A9}.team-photo:hover .team-details{background-color:#08487e}.team-photo .team-details h4, .team-photo .team-details p{color:#ffffff}.team-details .fa{color:#ffffff}p.col-md-12 .button-normal, .post .button-normal, .contact-us-banner .button-normal{background-color:#0B60A9}p.col-md-12 .button-normal:hover, .post .button-normal:hover, .contact-us-banner .button-normal:hover{background-color:#08487e}p.col-md-12 .button-normal, .post .button-normal, .contact-us-banner .button-normal{color:#ffffff}.single-services-wrap .features-item .icon-wrap i{color:#0B60A9}.contact-us-banner h2{color:#333333}.sidebar .widget.pdf-download{background-color:#0B60A9}.sidebar .widget.pdf-download ul li{border-bottom-color:#08487e}.sidebar .widget.pdf-download ul li a, .sidebar .widget.pdf-download h4, .contact-page .address h4, .contact-page .hours h4, .contact-page .address p, .contact-page .hours p{color:#ffffff}.services .services-text p, .widget-footer p, .widget-footer .footer-content h4, .services-calculator .form-section form label{color:#ffffff}.excerpt p, .services-calculator .intro-section p, .fform span, .excerpt, .latest-post .post-content .content-wrap .meta span, .meta span, .text-content p, .company-desc p, .company-vision p, .services-content p, .content-text p, .single-tag-bottom strong, .share span, .comment-respond h3, .comment-respond label, h4.title{color:#333333}.share ul li a{background-color:#ececec}.share ul li a{border-color:#cacaca}.share ul li a:hover{background-color:#0B60A9}.share ul li a:hover{border-color:#0B60A9}.social-share .fa{color:#0B60A9}.social-share .fa:hover{color:#ffffff}.copyright p a, .breadcrumbs span a, .tags a, .logged-in-as a, .single-tag-bottom a{color:#0B60A9}.copyright p a:hover, .breadcrumbs span a:hover, .tags a:hover, .logged-in-as a:hover, .single-tag-bottom a:hover{color:#08487e}.widget-title h4 span{color:#ffffff}.widget-footer h4.title:after{border-top-color:#ffffff}.button-normal.white{background-color:#ffffff}.button-normal.white:hover{background-color:#86c2eb}.button-normal.white{color:#f4f4f4}.button-normal.white:hover{color:#ffffff}.copyright .social-icon ul li a{color:#ffffff}.copyright p{color:#ffffff}</style>    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+    <link rel="icon" href="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://latinocargo.github.io/wp-content/uploads/2016/10/cropped-latinocargo-emoticon-270x270.png" />
+<style type="text/css" title="dynamic-css" class="options-output">body{font-family:Lato;font-weight:400;font-style:normal;}h1,h2,h3,h4,h5,h6{font-family:Montserrat;font-weight:700;font-style:normal;}ul#main-menu li a{font-family:Lato;font-weight:normal;font-style:normal;}</style>
 </head>
 
-<body class="home page page-id-2 page-template page-template-template page-template-home-template page-template-templatehome-template-php" onload="hideTotal()" style="overflow: visible;">
+<body class="home page page-id-2 page-template page-template-template page-template-home-template page-template-templatehome-template-php" onload="hideTotal()">
 
-<div id="preloader" style="display: none;">
-	<div id="status" style="display: none;">
-		
-	<div class="logo-image">
-	<a href="https://latinocargo.github.io/"><img src="./index_files/logo-latinocargo.png" class="image-logo" alt="logo"></a>
-	</div>
-	
-		</div>
+<div id="preloader">
+  <div id="status">
+    
+  <div class="logo-image">
+  <a href="https://latinocargo.github.io/"><img src="https://latinocargo.github.io/wp-content/uploads/2016/10/logo-latinocargo.png" class="image-logo" alt="logo" /></a>
+  </div>
+  
+    </div>
 </div>
 
 <!-- MAIN WRAPPER
 ============================================= -->
 <div id="main-wrapper" class="clearfix">
 
-	<!-- HEADER
-	============================================= -->
-	<header id="header" class="clearfix">
-		<div class="site-header">
-			<div class="container">
-				<div class="row">
-					<div class="top-header clearfix">
-						<div class="logo col-md-4">
-							
-	<div class="logo-image">
-	<a href="https://latinocargo.github.io/"><img src="./index_files/logo-latinocargo.png" class="image-logo" alt="logo"></a>
-	</div>
-	
-							</div>
+  <!-- HEADER
+  ============================================= -->
+  <header id="header" class="clearfix">
+    <div class="site-header">
+      <div class="container">
+        <div class="row">
+          <div class="top-header clearfix">
+            <div class="logo col-md-4">
+              
+  <div class="logo-image">
+  <a href="https://latinocargo.github.io/"><img src="https://latinocargo.github.io/wp-content/uploads/2016/10/logo-latinocargo.png" class="image-logo" alt="logo" /></a>
+  </div>
+  
+              </div>
 
-						<div class="info col-md-8">
-							<ul>
-									
-		<li>
-		<i class="fa fa-phone"></i>
-		<p>
-			<span class="heading">Llámenos</span>
-			<span>+51 01 375 8073 / +51 01 244 5765</span>
-		</p>
-	</li>
-		<li class="last">
-		<i class="fa fa-envelope"></i>
-		<p>
-			<span class="heading">Escríbanos a</span>
-			<span>info@latinocargo.com</span>
-		</p>
-	</li>
-								</ul>
-						</div>
+            <div class="info col-md-8">
+              <ul>
+                  
+    <li>
+    <i class="fa fa-phone"></i>
+    <p>
+      <span class="heading">Llámenos</span>
+      <span>+51 01 375 8073 / +51 01 244 5765</span>
+    </p>
+  </li>
+    <li class="last">
+    <i class="fa fa-envelope"></i>
+    <p>
+      <span class="heading">Escríbanos a</span>
+      <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7b12151d143b171a0f121514181a091c1455181416">info@latinocargo.com</a></span>
+    </p>
+  </li>
+                </ul>
+            </div>
 
-						<div class="slide-buttons">
-							<button id="slide-buttons" class="slide-button icon icon-navicon"></button>
-						</div>
-					</div>
+            <div class="slide-buttons">
+              <button id="slide-buttons" class="slide-button icon icon-navicon"></button>
+            </div>
+          </div>
 
-					<div class="navigation">
-						<div class="main-menu">
-							<ul id="menu-latinocargo" class="sm menus"><li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="http://latinocargo.github.io/">Inicio</a></li>
+          <div class="navigation">
+            <div class="main-menu">
+              <ul id="menu-latinocargo" class="sm menus"><li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="http://latinocargo.github.io">Inicio</a></li>
 <li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-114"><a href="https://latinocargo.github.io/index.php/nosotros/">Nosotros</a>
 <ul class="sub-menu">
-	<li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="https://latinocargo.github.io/index.php/politica-basc/">Política BASC</a></li>
+  <li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="https://latinocargo.github.io/index.php/politica-basc/">Política BASC</a></li>
 </ul>
 </li>
 <li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-67"><a href="https://latinocargo.github.io/index.php/servicios/">SERVICIOS</a>
 <ul class="sub-menu">
-	<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="https://latinocargo.github.io/index.php/logistica-integral/">Logística Integral</a></li>
-	<li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://latinocargo.github.io/index.php/transporte-y-distribucion/">Transporte y distribución</a></li>
-	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://latinocargo.github.io/index.php/soporte-y-asesoramiento/">Soporte y asesoramiento</a></li>
-	<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="https://latinocargo.github.io/index.php/manejo-de-documentos/">Manejo de documentos</a></li>
+  <li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="https://latinocargo.github.io/index.php/logistica-integral/">Logística Integral</a></li>
+  <li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://latinocargo.github.io/index.php/transporte-y-distribucion/">Transporte y distribución</a></li>
+  <li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://latinocargo.github.io/index.php/soporte-y-asesoramiento/">Soporte y asesoramiento</a></li>
+  <li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="https://latinocargo.github.io/index.php/manejo-de-documentos/">Manejo de documentos</a></li>
 </ul>
 </li>
 <li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://latinocargo.github.io/index.php/81-2/">Contacto</a></li>
 </ul>
-							<div class="right-section">
-								<div class="search">
-									<i class="fa fa-search"></i>
-								</div>
-								<div class="quote-link">
-	<a href="https://latinocargo.github.io/index.php/servicios/">Ver más servicios</a>
+              <div class="right-section">
+                <div class="search">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="quote-link">
+  <a href="https://latinocargo.github.io/index.php/servicios/">Ver más servicios</a>
 </div>
-								<div class="search-input">
-									<form method="get" action="https://latinocargo.github.io/">
-										<input class="untouched" placeholder="Enter your search term..." type="search" name="s" value="" id="s">
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="search-input">
+                  <form method="get" action="https://latinocargo.github.io/">
+                    <input class="untouched" placeholder="Enter your search term..." type="search" name="s" value="" id="s" >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Menu Mobile
-		============================================= -->
-		<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
-			<button class="c-menu__close icon icon-close"></button>
+    <!-- Menu Mobile
+    ============================================= -->
+    <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+      <button class="c-menu__close icon icon-close"></button>
 
-			<div class="search-input">
-				<form method="get" action="https://latinocargo.github.io/">
-					<input class="untouched" placeholder="Enter your search term..." type="search" name="smob" value="" id="smob">
-				</form>
-				<button><i class="fa fa-search"></i></button>
-			</div>
+      <div class="search-input">
+        <form method="get" action="https://latinocargo.github.io/">
+          <input class="untouched" placeholder="Enter your search term..." type="search" name="smob" value="" id="smob" >
+        </form>
+        <button><i class="fa fa-search"></i></button>
+      </div>
 
-			<ul id="menu-latinocargo-1" class="menus-mobile slide-menu-items"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="http://latinocargo.github.io/">Inicio</a></li>
+      <ul id="menu-latinocargo-1" class="menus-mobile slide-menu-items"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="http://latinocargo.github.io">Inicio</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-114"><a href="https://latinocargo.github.io/index.php/nosotros/">Nosotros</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="https://latinocargo.github.io/index.php/politica-basc/">Política BASC</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="https://latinocargo.github.io/index.php/politica-basc/">Política BASC</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-67"><a href="https://latinocargo.github.io/index.php/servicios/">SERVICIOS</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="https://latinocargo.github.io/index.php/logistica-integral/">Logística Integral</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://latinocargo.github.io/index.php/transporte-y-distribucion/">Transporte y distribución</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://latinocargo.github.io/index.php/soporte-y-asesoramiento/">Soporte y asesoramiento</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="https://latinocargo.github.io/index.php/manejo-de-documentos/">Manejo de documentos</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="https://latinocargo.github.io/index.php/logistica-integral/">Logística Integral</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="https://latinocargo.github.io/index.php/transporte-y-distribucion/">Transporte y distribución</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://latinocargo.github.io/index.php/soporte-y-asesoramiento/">Soporte y asesoramiento</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="https://latinocargo.github.io/index.php/manejo-de-documentos/">Manejo de documentos</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://latinocargo.github.io/index.php/81-2/">Contacto</a></li>
 </ul>
-			<div class="info">
-				<ul>
-						
-		<li>
-		<i class="fa fa-phone"></i>
-		<p>
-			<span class="heading">Llámenos</span>
-			<span>+51 01 375 8073 / +51 01 244 5765</span>
-		</p>
-	</li>
-		<li class="last">
-		<i class="fa fa-envelope"></i>
-		<p>
-			<span class="heading">Escríbanos a</span>
-			<span>info@latinocargo.com</span>
-		</p>
-	</li>
-					</ul>
-			</div>
-		</nav>
+      <div class="info">
+        <ul>
+            
+    <li>
+    <i class="fa fa-phone"></i>
+    <p>
+      <span class="heading">Llámenos</span>
+      <span>+51 01 375 8073 / +51 01 244 5765</span>
+    </p>
+  </li>
+    <li class="last">
+    <i class="fa fa-envelope"></i>
+    <p>
+      <span class="heading">Escríbanos a</span>
+      <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe97909891be929f8a9790919d9f8c9991d09d9193">info@latinocargo.com</a></span>
+    </p>
+  </li>
+          </ul>
+      </div>
+    </nav>
 
-		<div id="slide-overlay" class="slide-overlay"></div>
-		<!-- Menu Mobile End -->
-	</header>
-	<!-- HEADER END -->
+    <div id="slide-overlay" class="slide-overlay"></div>
+    <!-- Menu Mobile End -->
+  </header>
+  <!-- HEADER END -->
 
 <div id="main" class="site-main clearfix">
 <!-- SLIDER START
 ============================================= -->
-<section id="slider" class="home-slider clearfix" style="margin-top: -203px;">
-	<div class="slider-wrapper">
-		<div class="flexslider clearfix">
-			<ul class="slides">
+<section id="slider" class="home-slider clearfix">
+  <div class="slider-wrapper">
+    <div class="flexslider clearfix">
+      <ul class="slides">
 
-			
-				<li class="slide-item clearfix" style="background-image: url(&quot;https://latinocargo.github.io/wp-content/uploads/2016/10/latinocargo-peru-home-slider1.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1; min-height: 671px;">   
-					<div class="flex-content">
-						<div class="container">
-							<div class="row">
-								<div class="caption-wrap">
-																		<div class="caption wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-										<h1>Operadores de Carga internacional y Servicios logísticos</h1>
-									</div>
-																		<div class="caption wow fadeInUp animated" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">
-										<a href="https://latinocargo.github.io/index.php/nosotros/" class="button-normal" style="background-color: rgb(0, 90, 168); --darkreader-inline-bgcolor: #004179;" data-darkreader-inline-bgcolor="">Conozca más de nosotros</a>
-									</div>
-																	</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				
-				<li class="slide-item clearfix flex-active-slide" style="background-image: url(&quot;https://latinocargo.github.io/wp-content/uploads/2016/10/latinocargo-peru-home-slider2.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2; min-height: 671px;">   
-					<div class="flex-content">
-						<div class="container">
-							<div class="row">
-								<div class="caption-wrap">
-																		<div class="caption wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-										<h1>Transportación rápida y segura</h1>
-									</div>
-																		<div class="caption wow fadeInUp animated" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">
-										<a href="https://latinocargo.github.io/index.php/servicios/" class="button-normal" style="background-color: rgb(0, 90, 168); --darkreader-inline-bgcolor: #004179;" data-darkreader-inline-bgcolor="">Vea más servicios</a>
-									</div>
-																	</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				
-				<li class="slide-item clearfix" style="background-image: url(&quot;https://latinocargo.github.io/wp-content/uploads/2016/10/latinocargo-peru-home-slider3.jpg&quot;); width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1; min-height: 671px;">   
-					<div class="flex-content">
-						<div class="container">
-							<div class="row">
-								<div class="caption-wrap">
-																		<div class="caption wow fadeInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-										<h1>Para múltiples industrias</h1>
-									</div>
-																		<div class="caption wow fadeInUp animated" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInUp;">
-										<a href="https://latinocargo.github.io/index.php/logistica-integral/" class="button-normal" style="background-color: rgb(0, 90, 168); --darkreader-inline-bgcolor: #004179;" data-darkreader-inline-bgcolor="">Cargas especiales</a>
-									</div>
-																	</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				
-			</ul>
-		<ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="flex-active">2</a></li><li><a>3</a></li></ol><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="https://latinocargo.github.io/#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="https://latinocargo.github.io/#">Next</a></li></ul></div>
-	</div>
+      
+        <li class="slide-item clearfix" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/latinocargo-peru-home-slider1.jpg);">   
+          <div class="flex-content">
+            <div class="container">
+              <div class="row">
+                <div class="caption-wrap">
+                                    <div class="caption wow fadeInUp" data-wow-delay="0.5s">
+                    <h1>Operadores de Carga internacional y Servicios logísticos</h1>
+                  </div>
+                                    <div class="caption wow fadeInUp" data-wow-delay="1.5s">
+                    <a href="https://latinocargo.github.io/index.php/nosotros/" class="button-normal" style="background-color: #005aa8">Conozca más de nosotros</a>
+                  </div>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li class="slide-item clearfix" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/latinocargo-peru-home-slider2.jpg);">   
+          <div class="flex-content">
+            <div class="container">
+              <div class="row">
+                <div class="caption-wrap">
+                                    <div class="caption wow fadeInUp" data-wow-delay="0.5s">
+                    <h1>Transportación rápida y segura</h1>
+                  </div>
+                                    <div class="caption wow fadeInUp" data-wow-delay="1.5s">
+                    <a href="https://latinocargo.github.io/index.php/servicios/" class="button-normal" style="background-color: #005aa8">Vea más servicios</a>
+                  </div>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li class="slide-item clearfix" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/latinocargo-peru-home-slider3.jpg);">   
+          <div class="flex-content">
+            <div class="container">
+              <div class="row">
+                <div class="caption-wrap">
+                                    <div class="caption wow fadeInUp" data-wow-delay="0.5s">
+                    <h1>Para múltiples industrias</h1>
+                  </div>
+                                    <div class="caption wow fadeInUp" data-wow-delay="1.5s">
+                    <a href="https://latinocargo.github.io/index.php/logistica-integral/" class="button-normal" style="background-color: #005aa8">Cargas especiales</a>
+                  </div>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
 </section>
 <!-- SLIDER END -->
 
@@ -453,628 +288,572 @@ embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast
 ============================================= -->
 <section id="content" class="clearfix">
 
-	<!-- SERVICES START
-	============================================= -->
-		<div class="services with-bg" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/fondo-servicios-latinocargo-home-peru.jpg);">
-		<div class="container">
-			<div class="row">
-				
-								<!-- Service Quote -->
+  <!-- SERVICES START
+  ============================================= -->
+    <div class="services with-bg" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/fondo-servicios-latinocargo-home-peru.jpg);">
+    <div class="container">
+      <div class="row">
+        
+                <!-- Service Quote -->
 
-			</div>
-		</div>
-		
-				<div class="section-title text-center wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-			<h2>Nuestros Servicios</h2>
-		</div>
-				
-				<div class="services-wrap-carousel owl-carousel owl-theme owl-loaded">
+      </div>
+    </div>
+    
+        <div class="section-title text-center wow fadeIn">
+      <h2>Nuestros Servicios</h2>
+    </div>
+        
+        <div class="services-wrap-carousel">
 
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-		
-			
-					
-		<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1493px, 0px, 0px); transition: all 0s ease 0s; width: 7565px; padding-left: 50px; padding-right: 50px;"><div class="owl-item cloned" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/barco-carga-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Carga marítima</h3>
-						<p>Son los últimos en ser cargados, pero los primeros en descargar, reduciendo riesgos y...</p>
-						<a href="https://latinocargo.github.io/?service=carga-maritima" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item cloned" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/carga-aerea-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Carga Aérea</h3>
-						<p>Es el medio de transporte más rápido para largas distancias e imprescindible para envíos...</p>
-						<a href="https://latinocargo.github.io/?service=carga-aerea" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item active" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/integral-logistics-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Logística integral</h3>
-						<p>Latinocargo proporciona disponibilidad de espacios y tarifas con las principales líneas aéreas, marítimas y...</p>
-						<a href="https://latinocargo.github.io/?service=logistica-integral" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item active" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Carga terrestre</h3>
-						<p>Traspasamos fronteras con la garantía de un servicio de transporte de excelencia 100% coordinado...</p>
-						<a href="https://latinocargo.github.io/?service=carga-terrestre" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/soporte-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Asesoramiento y soporte técnico</h3>
-						<p>En LATINOCARGO uno de nuestros principios es&nbsp;establecer un estrecho vínculo con el cliente, nos...</p>
-						<a href="https://latinocargo.github.io/?service=asesoramiento-y-soporte-tecnico" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/deposito-alamecenamiento-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Depósito y almacenamiento</h3>
-						<p>Mantenemos un buen manejo mediante del uso de nuestros almacenes modernos e inteligentes. &nbsp;...</p>
-						<a href="https://latinocargo.github.io/?service=deposito-y-almacenamiento" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/barco-carga-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Carga marítima</h3>
-						<p>Son los últimos en ser cargados, pero los primeros en descargar, reduciendo riesgos y...</p>
-						<a href="https://latinocargo.github.io/?service=carga-maritima" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/carga-aerea-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Carga Aérea</h3>
-						<p>Es el medio de transporte más rápido para largas distancias e imprescindible para envíos...</p>
-						<a href="https://latinocargo.github.io/?service=carga-aerea" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item cloned" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/integral-logistics-latinocargo-peru.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Logística integral</h3>
-						<p>Latinocargo proporciona disponibilidad de espacios y tarifas con las principales líneas aéreas, marítimas y...</p>
-						<a href="https://latinocargo.github.io/?service=logistica-integral" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div><div class="owl-item cloned" style="width: 736.5px; margin-right: 10px;"><div class="item">
-				<div class="services-content">
-					<div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg);"></div>
-					<div class="services-text">
-						<h3 class="title">Carga terrestre</h3>
-						<p>Traspasamos fronteras con la garantía de un servicio de transporte de excelencia 100% coordinado...</p>
-						<a href="https://latinocargo.github.io/?service=carga-terrestre" class="button-normal with-icon">
-							Leer mas							<i class="icon icon-arrow-right"></i>
-						</a>
-					</div>
-					<div class="overlay"></div>
-				</div>
-			</div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="icon icon-ios-arrow-thin-left"></i></div><div class="owl-next" style=""><i class="icon icon-ios-arrow-thin-right"></i></div></div><div class="owl-dots" style="display: none;"></div></div></div>  
-		      
-	</div>
-	<!-- SERVICES END -->
+    
+      <div class="item">
+        <div class="services-content">
+          <div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/integral-logistics-latinocargo-peru.jpg);"></div>
+          <div class="services-text">
+            <h3 class="title">Logística integral</h3>
+            <p>Latinocargo proporciona disponibilidad de espacios y tarifas con las principales líneas aéreas, marítimas y...</p>
+            <a href="https://latinocargo.github.io/?service=logistica-integral" class="button-normal with-icon">
+              Leer mas              <i class="icon icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="services-content">
+          <div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg);"></div>
+          <div class="services-text">
+            <h3 class="title">Carga terrestre</h3>
+            <p>Traspasamos fronteras con la garantía de un servicio de transporte de excelencia 100% coordinado...</p>
+            <a href="https://latinocargo.github.io/?service=carga-terrestre" class="button-normal with-icon">
+              Leer mas              <i class="icon icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="services-content">
+          <div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/soporte-latinocargo-peru.jpg);"></div>
+          <div class="services-text">
+            <h3 class="title">Asesoramiento y soporte técnico</h3>
+            <p>En LATINOCARGO uno de nuestros principios es establecer un estrecho vínculo con el cliente, nos...</p>
+            <a href="https://latinocargo.github.io/?service=asesoramiento-y-soporte-tecnico" class="button-normal with-icon">
+              Leer mas              <i class="icon icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="services-content">
+          <div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/deposito-alamecenamiento-latinocargo-peru.jpg);"></div>
+          <div class="services-text">
+            <h3 class="title">Depósito y almacenamiento</h3>
+            <p>Mantenemos un buen manejo mediante del uso de nuestros almacenes modernos e inteligentes. &nbsp;...</p>
+            <a href="https://latinocargo.github.io/?service=deposito-y-almacenamiento" class="button-normal with-icon">
+              Leer mas              <i class="icon icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="services-content">
+          <div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/barco-carga-latinocargo-peru.jpg);"></div>
+          <div class="services-text">
+            <h3 class="title">Carga marítima</h3>
+            <p>Son los últimos en ser cargados, pero los primeros en descargar, reduciendo riesgos y...</p>
+            <a href="https://latinocargo.github.io/?service=carga-maritima" class="button-normal with-icon">
+              Leer mas              <i class="icon icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="services-content">
+          <div class="services-image" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/carga-aerea-latinocargo-peru.jpg);"></div>
+          <div class="services-text">
+            <h3 class="title">Carga Aérea</h3>
+            <p>Es el medio de transporte más rápido para largas distancias e imprescindible para envíos...</p>
+            <a href="https://latinocargo.github.io/?service=carga-aerea" class="button-normal with-icon">
+              Leer mas              <i class="icon icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+          
+    </div>  
+          
+  </div>
+  <!-- SERVICES END -->
 
-	<!-- FEATURES START
-	============================================= -->
-	
-		<div class="features wrapper">
-		<div class="container">
-			<div class="row">
+  <!-- FEATURES START
+  ============================================= -->
+  
+    <div class="features wrapper" >
+    <div class="container">
+      <div class="row">
 
-								<div class="section-title text-center wow fadeIn" style="visibility: hidden; animation-name: none;">
-					<h2>Por qué escogernos</h2>
-				</div>
-								
-				<div class="features-wrap row">
+                <div class="section-title text-center wow fadeIn">
+          <h2>Por qué escogernos</h2>
+        </div>
+                
+        <div class="features-wrap row">
 
-										<div class="col-md-4">
-						<div class="features-item wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
-							<div class="icon-wrap">
-															<i class="icon fa fa fa-ship"></i>
-														</div>
+                    <div class="col-md-4">
+            <div class="features-item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon-wrap" >
+                              <i class="icon fa fa fa-ship"></i>
+                            </div>
 
-							<div class="text">
-																	<h4>Carga marítima</h4>
-																	Aprovecha los fletes más competitivos de transporte marítimo internacional.															</div>
-						</div>
-					</div>
-										<div class="col-md-4">
-						<div class="features-item wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
-							<div class="icon-wrap">
-															<i class="icon fa fa fa-plane"></i>
-														</div>
+              <div class="text">
+                                  <h4>Carga marítima</h4>
+                                  Aprovecha los fletes más competitivos de transporte marítimo internacional.                             </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="features-item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon-wrap" >
+                              <i class="icon fa fa fa-plane"></i>
+                            </div>
 
-							<div class="text">
-																	<h4>Carga Aérea</h4>
-																	Diseñamos soluciones flexibles a tu medida mediante transporte aéreo de carga.															</div>
-						</div>
-					</div>
-										<div class="col-md-4">
-						<div class="features-item wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
-							<div class="icon-wrap">
-															<i class="icon fa fa fa-truck"></i>
-														</div>
+              <div class="text">
+                                  <h4>Carga Aérea</h4>
+                                  Diseñamos soluciones flexibles a tu medida mediante transporte aéreo de carga.                              </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="features-item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon-wrap" >
+                              <i class="icon fa fa fa-truck"></i>
+                            </div>
 
-							<div class="text">
-																	<h4>Carga terrestre</h4>
-																	Transporte de excelencia 100% coordinado y supervisado por nuestra empresa.															</div>
-						</div>
-					</div>
-										<div class="col-md-4">
-						<div class="features-item wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
-							<div class="icon-wrap">
-															<i class="icon fa fa fa-adn"></i>
-														</div>
+              <div class="text">
+                                  <h4>Carga terrestre</h4>
+                                  Transporte de excelencia 100% coordinado y supervisado por nuestra empresa.                             </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="features-item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon-wrap" >
+                              <i class="icon fa fa fa-adn"></i>
+                            </div>
 
-							<div class="text">
-																	<h4>Expertos en valoración aduanera</h4>
-																	Sabemos cómo optimizar la parte aduanera y fiscal de sus operaciones.															</div>
-						</div>
-					</div>
-										<div class="col-md-4">
-						<div class="features-item wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
-							<div class="icon-wrap">
-															<i class="icon fa fa fa-wrench"></i>
-														</div>
+              <div class="text">
+                                  <h4>Expertos en valoración aduanera</h4>
+                                  Sabemos cómo optimizar la parte aduanera y fiscal de sus operaciones.                             </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="features-item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon-wrap" >
+                              <i class="icon fa fa fa-wrench"></i>
+                            </div>
 
-							<div class="text">
-																	<h4>Servicio y soporte</h4>
-																	Nuestra plataforma tecnológica para el control y seguimiento de procesos nos permite brindar un servicio personalizado.
-															</div>
-						</div>
-					</div>
-										<div class="col-md-4">
-						<div class="features-item wow fadeInUp" data-wow-delay="0.5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
-							<div class="icon-wrap">
-															<i class="icon fa fa-shield"></i>
-														</div>
+              <div class="text">
+                                  <h4>Servicio y soporte</h4>
+                                  Nuestra plataforma tecnológica para el control y seguimiento de procesos nos permite brindar un servicio personalizado.
+                              </div>
+            </div>
+          </div>
+                    <div class="col-md-4">
+            <div class="features-item wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon-wrap" >
+                              <i class="icon fa fa-shield"></i>
+                            </div>
 
-							<div class="text">
-																	<h4>Seguridad</h4>
-																	Nuestro sistema avanzado de seguridad y control nos permite evitar contratiempos con la carga. 															</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-		<!-- FEATURES END -->
+              <div class="text">
+                                  <h4>Seguridad</h4>
+                                  Nuestro sistema avanzado de seguridad y control nos permite evitar contratiempos con la carga.                              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- FEATURES END -->
 
-	<!-- SERVICES CALCULATOR START
-	============================================= -->
-	<!--  	<div class="services-calculator bg-color" >
-		<div class="container">
-			<div class="row">
-				<div class="services-calculator-wrap row">
-					<div class="intro-section col-md-6">
-						
-												
-											</div>
-					
-									</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- SERVICE CALCULATOR END -->
+  <!-- SERVICES CALCULATOR START
+  ============================================= -->
+  <!--    <div class="services-calculator bg-color" >
+    <div class="container">
+      <div class="row">
+        <div class="services-calculator-wrap row">
+          <div class="intro-section col-md-6">
+            
+                        
+                      </div>
+          
+                  </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- SERVICE CALCULATOR END -->
 
-	<!-- TESTIMONIAL START
-	============================================= -->
-	<!--  	<div class="testimonial wrapper with-bg" >
-		<div class="container">
-			<div class="row">
+  <!-- TESTIMONIAL START
+  ============================================= -->
+  <!--    <div class="testimonial wrapper with-bg" >
+    <div class="container">
+      <div class="row">
 
-								
-								<!-- owl-carousel-testimonial end -->
-				
-				
-			</section></div>
-		</div>
-	 
-	<!-- TESTIMONIAL END -->
+                
+                <!-- owl-carousel-testimonial end -->
+        
+        
+      </div>
+    </div>
+  </div> 
+  <!-- TESTIMONIAL END -->
 
-	<!-- LATEST NEWS START
-	============================================= -->
-	<!--  
-		<div class="latest-post wrapper bg-color" style="background-color: #f7f7f7;">
-		<div class="container">
-			<div class="row">
-				
-								<div class="section-title text-center wow fadeIn">
-					<h2>Noticias</h2>
-				</div>
-				
-				<div class="post-wrap wow fadeIn" data-wow-delay="0.5s">
+  <!-- LATEST NEWS START
+  ============================================= -->
+  <!--  
+    <div class="latest-post wrapper bg-color" style="background-color: #f7f7f7;">
+    <div class="container">
+      <div class="row">
+        
+                <div class="section-title text-center wow fadeIn">
+          <h2>Noticias</h2>
+        </div>
+        
+        <div class="post-wrap wow fadeIn" data-wow-delay="0.5s">
 
-				
-					
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/">
-							<div class="post-thumb">
-								<img width="840" height="485" src="https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Carga via terrestre nacional e internacional" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg 840w, https://latinocargo.github.io/wp-content/uploads/2016/10/camionred-300x173.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/camionred-768x443.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />								<div class="overlay"></div>
-							</div>
-						</a>
-						
-						<div class="post-content">
-							<div class="date">
-								<span>25</span>
-								<span>Nov</span>
-							</div>
+        
+          
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/">
+              <div class="post-thumb">
+                <img width="840" height="485" src="https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Carga via terrestre nacional e internacional" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/camionred.jpg 840w, https://latinocargo.github.io/wp-content/uploads/2016/10/camionred-300x173.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/camionred-768x443.jpg 768w" sizes="(max-width: 840px) 100vw, 840px" />               <div class="overlay"></div>
+              </div>
+            </a>
+            
+            <div class="post-content">
+              <div class="date">
+                <span>25</span>
+                <span>Nov</span>
+              </div>
 
-							<div class="content-wrap">
-								<h4>Vehículos turísticos sancionados no serán comisados si pagan multa</h4>
-								<div class="meta">
-									<span class="author"><i class="fa fa-user"></i> latinoadmin</span>
-									<span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
-								</div>
-								<div class="excerpt">Desde el 29 de octubre del presente año ya no es aplicable el decomiso a los vehículos que ingresaron...</div>
-								<a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/" class="button-normal with-icon">
-									Read More									<i class="icon icon-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
+              <div class="content-wrap">
+                <h4>Vehículos turísticos sancionados no serán comisados si pagan multa</h4>
+                <div class="meta">
+                  <span class="author"><i class="fa fa-user"></i> latinoadmin</span>
+                  <span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
+                </div>
+                <div class="excerpt">Desde el 29 de octubre del presente año ya no es aplicable el decomiso a los vehículos que ingresaron...</div>
+                <a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/" class="button-normal with-icon">
+                  Read More                 <i class="icon icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-				
-					
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/">
-							<div class="post-thumb">
-								<img width="760" height="493" src="https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="dinero_electronico1" srcset="https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1.png 760w, https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1-300x195.png 300w" sizes="(max-width: 760px) 100vw, 760px" />								<div class="overlay"></div>
-							</div>
-						</a>
-						
-						<div class="post-content">
-							<div class="date">
-								<span>01</span>
-								<span>Nov</span>
-							</div>
+        
+          
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/">
+              <div class="post-thumb">
+                <img width="760" height="493" src="https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="dinero_electronico1" srcset="https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1.png 760w, https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1-300x195.png 300w" sizes="(max-width: 760px) 100vw, 760px" />               <div class="overlay"></div>
+              </div>
+            </a>
+            
+            <div class="post-content">
+              <div class="date">
+                <span>01</span>
+                <span>Nov</span>
+              </div>
 
-							<div class="content-wrap">
-								<h4>Sunat: pago mensual del RUS desde smartphones</h4>
-								<div class="meta">
-									<span class="author"><i class="fa fa-user"></i> latinoadmin</span>
-									<span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
-								</div>
-								<div class="excerpt">Esta medida entrará en vigencia desde el 1ro de noviembre, señala una resolución de la Sunat emitida hoy. Operaciones...</div>
-								<a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/" class="button-normal with-icon">
-									Read More									<i class="icon icon-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
+              <div class="content-wrap">
+                <h4>Sunat: pago mensual del RUS desde smartphones</h4>
+                <div class="meta">
+                  <span class="author"><i class="fa fa-user"></i> latinoadmin</span>
+                  <span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
+                </div>
+                <div class="excerpt">Esta medida entrará en vigencia desde el 1ro de noviembre, señala una resolución de la Sunat emitida hoy. Operaciones...</div>
+                <a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/" class="button-normal with-icon">
+                  Read More                 <i class="icon icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-				
-					
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/">
-							<div class="post-thumb">
-								<img width="960" height="638" src="https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="international-conference-1597531_960_720" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720.jpg 960w, https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720-300x199.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720-768x510.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" />								<div class="overlay"></div>
-							</div>
-						</a>
-						
-						<div class="post-content">
-							<div class="date">
-								<span>17</span>
-								<span>Oct</span>
-							</div>
+        
+          
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/">
+              <div class="post-thumb">
+                <img width="960" height="638" src="https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="international-conference-1597531_960_720" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720.jpg 960w, https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720-300x199.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720-768x510.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" />               <div class="overlay"></div>
+              </div>
+            </a>
+            
+            <div class="post-content">
+              <div class="date">
+                <span>17</span>
+                <span>Oct</span>
+              </div>
 
-							<div class="content-wrap">
-								<h4>Charla Informativa para Operadores de Comercio Exterior</h4>
-								<div class="meta">
-									<span class="author"><i class="fa fa-user"></i> latinoadmin</span>
-									<span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
-								</div>
-								<div class="excerpt">La Superintendencia Nacional de Aduanas y de Administración Tributaria &#8211; SUNAT, pone en conocimiento de los operadores del comercio...</div>
-								<a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/" class="button-normal with-icon">
-									Read More									<i class="icon icon-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
+              <div class="content-wrap">
+                <h4>Charla Informativa para Operadores de Comercio Exterior</h4>
+                <div class="meta">
+                  <span class="author"><i class="fa fa-user"></i> latinoadmin</span>
+                  <span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
+                </div>
+                <div class="excerpt">La Superintendencia Nacional de Aduanas y de Administración Tributaria &#8211; SUNAT, pone en conocimiento de los operadores del comercio...</div>
+                <a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/" class="button-normal with-icon">
+                  Read More                 <i class="icon icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-				
-					
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/10/17/frontera-de-peru-con-chile-no-usara-ni-un-papel-mas/">
-							<div class="post-thumb">
-								<img width="960" height="638" src="https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="airport-aduana-noticia" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia.jpg 960w, https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia-300x199.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia-768x510.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" />								<div class="overlay"></div>
-							</div>
-						</a>
-						
-						<div class="post-content">
-							<div class="date">
-								<span>17</span>
-								<span>Oct</span>
-							</div>
+        
+          
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/10/17/frontera-de-peru-con-chile-no-usara-ni-un-papel-mas/">
+              <div class="post-thumb">
+                <img width="960" height="638" src="https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="airport-aduana-noticia" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia.jpg 960w, https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia-300x199.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/airport-aduana-noticia-768x510.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" />               <div class="overlay"></div>
+              </div>
+            </a>
+            
+            <div class="post-content">
+              <div class="date">
+                <span>17</span>
+                <span>Oct</span>
+              </div>
 
-							<div class="content-wrap">
-								<h4>Frontera de Perú con Chile apoyan soporte electrónico en vez de papel</h4>
-								<div class="meta">
-									<span class="author"><i class="fa fa-user"></i> latinoadmin</span>
-									<span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
-								</div>
-								<div class="excerpt">Los trámites y sistema de control en las aduanas entre ambos países será totalmente digital desde abril del 2017....</div>
-								<a href="https://latinocargo.github.io/index.php/2016/10/17/frontera-de-peru-con-chile-no-usara-ni-un-papel-mas/" class="button-normal with-icon">
-									Read More									<i class="icon icon-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
+              <div class="content-wrap">
+                <h4>Frontera de Perú con Chile apoyan soporte electrónico en vez de papel</h4>
+                <div class="meta">
+                  <span class="author"><i class="fa fa-user"></i> latinoadmin</span>
+                  <span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
+                </div>
+                <div class="excerpt">Los trámites y sistema de control en las aduanas entre ambos países será totalmente digital desde abril del 2017....</div>
+                <a href="https://latinocargo.github.io/index.php/2016/10/17/frontera-de-peru-con-chile-no-usara-ni-un-papel-mas/" class="button-normal with-icon">
+                  Read More                 <i class="icon icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-				
-					
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/10/10/hello-world/">
-							<div class="post-thumb">
-								<img width="960" height="638" src="https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="noticias-latinocargo-1" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1.jpg 960w, https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1-300x199.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1-768x510.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" />								<div class="overlay"></div>
-							</div>
-						</a>
-						
-						<div class="post-content">
-							<div class="date">
-								<span>10</span>
-								<span>Oct</span>
-							</div>
+        
+          
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/10/10/hello-world/">
+              <div class="post-thumb">
+                <img width="960" height="638" src="https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="noticias-latinocargo-1" srcset="https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1.jpg 960w, https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1-300x199.jpg 300w, https://latinocargo.github.io/wp-content/uploads/2016/10/noticias-latinocargo-1-768x510.jpg 768w" sizes="(max-width: 960px) 100vw, 960px" />               <div class="overlay"></div>
+              </div>
+            </a>
+            
+            <div class="post-content">
+              <div class="date">
+                <span>10</span>
+                <span>Oct</span>
+              </div>
 
-							<div class="content-wrap">
-								<h4>Flexibilizan sanciones para infracciones aduaneras</h4>
-								<div class="meta">
-									<span class="author"><i class="fa fa-user"></i> latinoadmin</span>
-									<span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
-								</div>
-								<div class="excerpt">&nbsp; Los concesionarios de puertos, aeropuertos o terminales terrestres también son considerados operadores de comercio exterior Las sanciones aduaneras...</div>
-								<a href="https://latinocargo.github.io/index.php/2016/10/10/hello-world/" class="button-normal with-icon">
-									Read More									<i class="icon icon-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
+              <div class="content-wrap">
+                <h4>Flexibilizan sanciones para infracciones aduaneras</h4>
+                <div class="meta">
+                  <span class="author"><i class="fa fa-user"></i> latinoadmin</span>
+                  <span class="comments last"><i class="fa fa-comment"></i> 0 Comments</span>
+                </div>
+                <div class="excerpt">&nbsp; Los concesionarios de puertos, aeropuertos o terminales terrestres también son considerados operadores de comercio exterior Las sanciones aduaneras...</div>
+                <a href="https://latinocargo.github.io/index.php/2016/10/10/hello-world/" class="button-normal with-icon">
+                  Read More                 <i class="icon icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-				
-				</div>
-			</div>
-		</div>
-	</div>
-	 -->
-	<!-- LATEST NEWS END -->
+        
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+  <!-- LATEST NEWS END -->
 
-	<!-- COUNTER NUMBER START
-	============================================= -->
-			<div class="counter-section wrapper" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/technical-support-latinocargo-peru.jpg);">
-		<div class="container">
-			<div class="row">
+  <!-- COUNTER NUMBER START
+  ============================================= -->
+      <div class="counter-section wrapper" style="background-image: url(https://latinocargo.github.io/wp-content/uploads/2016/10/technical-support-latinocargo-peru.jpg);" >
+    <div class="container">
+      <div class="row">
 
-				<div class="counter-wrap row">
+        <div class="counter-wrap row">
 
-				
-					<div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+        
+          <div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="0.2s">
 
-						
-						<div class="counter-details">
-													</div>
-					</div>
+            
+            <div class="counter-details">
+                          </div>
+          </div>
 
-					
-				</div>
-			</div>
-		</div>
-	</div>
-		<!-- COUNTER NUMBER END -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- COUNTER NUMBER END -->
 
 
-
+</section>
 <!-- CONTENT END -->
 
 
-
+</div>
 <!-- site-main -->
 
 <!-- FOOTER START
 ============================================= -->
 
 <footer id="footer" class="wrapper clearfix" style="background-image: url(https://latinocargo.github.io/wp-content/themes/logitrans/img/footer-bg.jpg);">
-	<div class="container">
-		<div class="row">
-			<div class="footer-wrap row">
-				  
+  <div class="container">
+    <div class="row">
+      <div class="footer-wrap row">
+          
         <div class="footer-widget col-md-4">
-            <div id="text-3" class="widget-footer widget_text"><div class="widget-title"><h4 class="title"><span>LatinoCargo</span></h4></div>			<div class="textwidget"><p style="color: rgb(255, 255, 255); --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">Ofrecemos soluciones de logística y comercio exterior para sus suministros de modo personalizado y seguro. Nuestro compromiso con usted es ofrecer un servicio confiable y seguro. </p></div>
-		</div>        </div>
+            <div id="text-3" class="widget-footer widget_text"><div class="widget-title"><h4 class="title"><span>LatinoCargo</span></h4></div>      <div class="textwidget"><p style="color:#FFFFFF">Ofrecemos soluciones de logística y comercio exterior para sus suministros de modo personalizado y seguro. Nuestro compromiso con usted es ofrecer un servicio confiable y seguro. </p></div>
+    </div>        </div>
         
         <div class="footer-widget col-md-4">
-            <div id="logitrans_latest_desc-widget-3" class="widget-footer recent-post"><div class="widget-title"><h4 class="title"><span>Noticias recientes</span></h4></div>			
-			<div class="footer-content">
-			<div class="recent-post">
-								
-					<!-- widget-news -->
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/">
-							<div class="post-thumb">
-								<img src="./index_files/camionred-60x60.jpg" alt="latestwid-img">
-								<div class="overlay"></div>
-							</div>
-						</a>
-												<div class="post-content">
-							<a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/">
-								<h4>Vehículos turísticos sancionados no serán comisados si pagan multa</h4>
-							</a>
-							<p>Desde el 29 de...</p>
-							<div class="meta">
-								<span class="date">November 25, 2016</span>
-							</div>
-						</div>
-					</div>
-					<!-- widget-news end -->
+            <div id="logitrans_latest_desc-widget-3" class="widget-footer recent-post"><div class="widget-title"><h4 class="title"><span>Noticias recientes</span></h4></div>     
+      <div class="footer-content">
+      <div class="recent-post">
+                
+          <!-- widget-news -->
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/">
+              <div class="post-thumb">
+                <img src="https://latinocargo.github.io/wp-content/uploads/2016/10/camionred-60x60.jpg" alt="latestwid-img">
+                <div class="overlay"></div>
+              </div>
+            </a>
+                        <div class="post-content">
+              <a href="https://latinocargo.github.io/index.php/2016/11/25/vehiculos-turisticos-sancionados-no-seran-comisados-si-pagan-multa/">
+                <h4>Vehículos turísticos sancionados no serán comisados si pagan multa</h4>
+              </a>
+              <p>Desde el 29 de...</p>
+              <div class="meta">
+                <span class="date">November 25, 2016</span>
+              </div>
+            </div>
+          </div>
+          <!-- widget-news end -->
 
-								
-					<!-- widget-news -->
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/">
-							<div class="post-thumb">
-								<img src="./index_files/dinero_electronico1-60x60.png" alt="latestwid-img">
-								<div class="overlay"></div>
-							</div>
-						</a>
-												<div class="post-content">
-							<a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/">
-								<h4>Sunat: pago mensual del RUS desde smartphones</h4>
-							</a>
-							<p>Esta medida entrará en...</p>
-							<div class="meta">
-								<span class="date">November 1, 2016</span>
-							</div>
-						</div>
-					</div>
-					<!-- widget-news end -->
+                
+          <!-- widget-news -->
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/">
+              <div class="post-thumb">
+                <img src="https://latinocargo.github.io/wp-content/uploads/2016/11/dinero_electronico1-60x60.png" alt="latestwid-img">
+                <div class="overlay"></div>
+              </div>
+            </a>
+                        <div class="post-content">
+              <a href="https://latinocargo.github.io/index.php/2016/11/01/sunat-pago-mensual-del-rus-desde-smartphones/">
+                <h4>Sunat: pago mensual del RUS desde smartphones</h4>
+              </a>
+              <p>Esta medida entrará en...</p>
+              <div class="meta">
+                <span class="date">November 1, 2016</span>
+              </div>
+            </div>
+          </div>
+          <!-- widget-news end -->
 
-								
-					<!-- widget-news -->
-					<div class="post-item">
-												<a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/">
-							<div class="post-thumb">
-								<img src="./index_files/international-conference-1597531_960_720-60x60.jpg" alt="latestwid-img">
-								<div class="overlay"></div>
-							</div>
-						</a>
-												<div class="post-content">
-							<a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/">
-								<h4>Charla Informativa para Operadores de Comercio Exterior</h4>
-							</a>
-							<p>La Superintendencia Nacional de...</p>
-							<div class="meta">
-								<span class="date">October 17, 2016</span>
-							</div>
-						</div>
-					</div>
-					<!-- widget-news end -->
+                
+          <!-- widget-news -->
+          <div class="post-item">
+                        <a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/">
+              <div class="post-thumb">
+                <img src="https://latinocargo.github.io/wp-content/uploads/2016/10/international-conference-1597531_960_720-60x60.jpg" alt="latestwid-img">
+                <div class="overlay"></div>
+              </div>
+            </a>
+                        <div class="post-content">
+              <a href="https://latinocargo.github.io/index.php/2016/10/17/charla-informativa-registro-de-personal-de-los-operadores-de-comercio-exterior/">
+                <h4>Charla Informativa para Operadores de Comercio Exterior</h4>
+              </a>
+              <p>La Superintendencia Nacional de...</p>
+              <div class="meta">
+                <span class="date">October 17, 2016</span>
+              </div>
+            </div>
+          </div>
+          <!-- widget-news end -->
 
-							</div>
-			</div>
-		
-		</div>        </div>
+              </div>
+      </div>
+    
+    </div>        </div>
         
         <div class="footer-widget col-md-4">
-            <div id="text-5" class="widget-footer widget_text"><div class="widget-title"><h4 class="title"><span>Contáctenos</span></h4></div>			<div class="textwidget"><h4 style="color: white; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">Oficina</h4>
+            <div id="text-5" class="widget-footer widget_text"><div class="widget-title"><h4 class="title"><span>Contáctenos</span></h4></div>      <div class="textwidget"><h4 style="color:white">Oficina</h4>
 
-<p style="color: white; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">Av. Miro Quesada (ex Juan de Aliaga) Nro. 425, Oficina 906 - Magdalena del Mar
+<p style="color:white; margin-top:-20
+px">Av. Miro Quesada (ex Juan de Aliaga) Nro. 425, Oficina 906 - Magdalena del Mar
 Edificio Prisma Business Tower 
 </p>
-<p style="color: white; margin-top: -15px; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">Lima-Perú</p>
+<p style="color:white; margin-top:-15px">Lima-Perú</p>
 
-<h4 style="color: white; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">Teléfono</h4>
-<p style="color: white; margin-top: -20px; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">  
+<h4 style="color:white">Teléfono</h4>
+<p style="color:white; margin-top:-20px">  
 +51 01 375 8073 / +51 01 244 5765
 </p>
-<h4 style="color: white; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">Email</h4>
-<p style="color: white; margin-top: -20px; --darkreader-inline-color: #d1cfcc;" data-darkreader-inline-color="">  
-info@latinocargo.com</p>
+<h4 style="color:white">Email</h4>
+<p style="color:white; margin-top:-20px">  
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5930373f361935382d3037363a382b3e36773a3634">info@latinocargo.com</a></p>
 
 </div>
-		</div>        </div>
+    </div>        </div>
     
-  			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+  </div>
 
-	<!-- COPYRIGHT START
-	============================================= -->
-	<!--<div class="copyright text-center">
-		<div class="container">
-			<div class="social-icon">
-				<ul>
-								<li class="twitter soc-icon"><a href="http://twitter.com/#" class="fa fa-twitter"></a></li>
-			<li class="google soc-icon"><a href="http://google.com/#" class="fa fa-google-plus"></a></li>
-			<li class="facebook soc-icon"><a href="http://facebook.com/#" class="fa fa-facebook"></a></li>
-			<li class="linkedin soc-icon"><a href="http://linkedin.com/#" class="fa fa-linkedin"></a></li>
-			<li class="pinterest soc-icon"><a href="http://pinterest.com/#" class="fa fa-pinterest"></a></li>
-			<li class="youtube soc-icon"><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
-			<li class="instagram soc-icon"><a href="https://instagram.com/" class="fa fa-instagram"></a></li>
-					</ul>
-			</div>
-			Powered by Logasystems		</div>
-	</div> -->
-	<!-- COPYRIGHT END -->
+  <!-- COPYRIGHT START
+  ============================================= -->
+  <!--<div class="copyright text-center">
+    <div class="container">
+      <div class="social-icon">
+        <ul>
+                <li class="twitter soc-icon"><a href="http://twitter.com/#" class="fa fa-twitter"></a></li>
+      <li class="google soc-icon"><a href="http://google.com/#" class="fa fa-google-plus"></a></li>
+      <li class="facebook soc-icon"><a href="http://facebook.com/#" class="fa fa-facebook"></a></li>
+      <li class="linkedin soc-icon"><a href="http://linkedin.com/#" class="fa fa-linkedin"></a></li>
+      <li class="pinterest soc-icon"><a href="http://pinterest.com/#" class="fa fa-pinterest"></a></li>
+      <li class="youtube soc-icon"><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+      <li class="instagram soc-icon"><a href="https://instagram.com/" class="fa fa-instagram"></a></li>
+          </ul>
+      </div>
+      Powered by Logasystems    </div>
+  </div> -->
+  <!-- COPYRIGHT END -->
 
 </footer>
 <!-- FOOTER END -->
 
-
+</div>
 <!-- MAIN WRAPPER END -->
 
-<script type="text/javascript" src="./index_files/jquery.form.min.js.descarga"></script>
-<script type="text/javascript">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='https://latinocargo.github.io/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
 /* <![CDATA[ */
 var _wpcf7 = {"loaderUrl":"https:\/\/latinocargo.github.io\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
 /* ]]> */
 </script>
-<script type="text/javascript" src="./index_files/scripts.js.descarga"></script>
-<script type="text/javascript" src="./index_files/plugin.js.descarga"></script>
-<script type="text/javascript" src="./index_files/main.js.descarga"></script>
-<script type="text/javascript" src="./index_files/wp-embed.min.js.descarga"></script>
+<script type='text/javascript' src='https://latinocargo.github.io/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
+<script type='text/javascript' src='https://latinocargo.github.io/wp-content/themes/logitrans/js/plugin.js?ver=4.6.26'></script>
+<script type='text/javascript' src='https://latinocargo.github.io/wp-content/themes/logitrans/js/main.js?ver=4.6.26'></script>
+<script type='text/javascript' src='https://latinocargo.github.io/wp-includes/js/wp-embed.min.js?ver=4.6.26'></script>
 
-
-</body><style id="stylus-2" type="text/css" class="stylus">img {
-    opacity: 0.6;
-    transition: 0.2s;
-}
-
-img:hover {
-    opacity: 0.8;
-    transition: 0.2s;
-}
-</style></html>
+</body>
+</html>
