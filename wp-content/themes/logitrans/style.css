@@ -2565,3 +2565,7 @@ div.wpcf7-response-output {
     padding: 0.5em 1em;
     color: #ffffff;
 }
+
+.search, .search-input {
+    display: none!important;
+}
