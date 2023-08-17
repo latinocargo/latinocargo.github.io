@@ -2566,6 +2566,10 @@ div.wpcf7-response-output {
     color: #ffffff;
 }
 
-.search, .search-input {
+.search,
+.search-input,
+.widget_search,
+#search,
+#search-2 {
     display: none!important;
 }
